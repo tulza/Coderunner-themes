@@ -1,7 +1,7 @@
 {
-  "name": "Coderunner theme",
+  "name": "Coderunner themes",
   "version": "0.0.0.1",
-  "description": "dark theme for coderunner, it literally just inverts the color lol",
+  "description": "themes for coderunner!",
   "manifest_version": 3,
   "icons": {
     "48": "images/icon-48.png",
