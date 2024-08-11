@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  border-radius: 32px;
+}
+
+html {
+  --primary: rgb(255, 154, 39);
+  background-color: var(--primary);
+}
+
+.container {
+  width: 275px;
+  background: white;
+  /* user-select: none; */
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  margin: 0 10px;
+  background: white;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.toggle-circle {
+  height: 12px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.button-temp {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgb(43, 43, 43);
+  cursor: pointer;
+}
+
+/* 2 theme button per row */
+.theme-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 8px;
+}
+
+.active {
+  justify-content: end;
+}
