@@ -1,0 +1,17 @@
+{
+  "name": "Coderunner theme",
+  "version": "0.0.0.1",
+  "description": "dark theme for coderunner, it literally just inverts the color lol",
+  "manifest_version": 3,
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://coderunner.auckland.ac.nz/*"],
+      "js": ["background.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
