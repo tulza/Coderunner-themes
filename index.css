@@ -1,71 +1,95 @@
-html,
-body {
+@import url("tailwond.css");
+* {
   padding: 0;
   margin: 0;
-  border-radius: 32px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 html {
-  --primary: rgb(255, 154, 39);
-  background-color: var(--primary);
+  background: #323232;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+#reset {
+  cursor: pointer;
+  background: #682125;
+  color: #ff525c;
+  border: 2px solid #ff525c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.lucide {
+  fill: #323232;
+  cursor: pointer;
 }
 
 .container {
-  width: 275px;
-  background: white;
-  /* user-select: none; */
+  width: 325px;
+  padding: 24px 32px;
+  border: 2px solid #545454;
+  color: white;
+  font-family: monospace;
 }
 
-.toggle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#toggle-switch {
-  position: relative;
-  width: 40px;
-  height: 20px;
-  margin: 0 10px;
-  background: white;
-  border: 2px solid rgb(43, 43, 43);
-  border-radius: 999px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 2px;
-}
-
-.toggle-circle {
-  height: 12px;
-  aspect-ratio: 1;
-  border-radius: 999px;
-  background: var(--primary);
-}
-
-.button-temp {
-  width: 100%;
+.card {
+  box-sizing: border-box;
   height: 40px;
-  border-radius: 8px;
-  border: 1px solid rgb(43, 43, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 16px;
+  margin-top: -2px;
+  width: 100%;
+  position: relative;
+  user-select: none;
 }
 
-/* 2 theme button per row */
-.theme-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  padding: 8px;
+input[type="radio"] {
+  opacity: 0;
+}
+input[type="radio"]:checked {
+  opacity: 1;
+}
+.default {
+  background: #232323;
+  border: 2px solid #515151;
+  box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
-.active {
-  justify-content: end;
+.-mx-xs {
+  margin: 0 -2px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.base {
+  top: 0;
+  left: 0;
 }

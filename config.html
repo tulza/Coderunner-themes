@@ -7,24 +7,61 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 align="center">Coderunner Themes</h1>
-      <hr />
-      <div class="toggle-container">
-        <div class="toggle">
-          enable
-          <button id="toggle-switch">
-            <div class="toggle-circle"></div>
-          </button>
-          disable
+    <div class="container flex flex-col">
+      <h1>CodeRunner Themes</h1>
+      <p>current theme: <span id="theme">-</span></p>
+      <p>debug: <span id="debug">-</span></p>
+      <div class="mt-4 flex w-full">
+        <div class="w-full">
+          <div class="card default">
+            <input value="none" type="radio" name="theme" class="absolute size-full base radio" checked />
+            None
+          </div>
+          <div class="card default">
+            <input value="2" type="radio" name="theme" class="absolute size-full base radio" />
+            2
+          </div>
+          <div class="card default">
+            <input value="3" type="radio" name="theme" class="absolute size-full radio base" />
+            3
+          </div>
+          <div class="card default mt-4">Invert</div>
         </div>
-      </div>
-      <hr />
-      <div class="theme-container">
-        <button class="button-temp">None</button>
-        <button class="button-temp">Inverted</button>
+        <div class="w-full -mx-xs">
+          <div class="card default">
+            <input value="4" type="radio" name="theme" class="absolute size-full base radio" />
+            4
+          </div>
+          <div class="card default">
+            <input value="5" type="radio" name="theme" class="absolute size-full base radio" />
+            5
+          </div>
+          <div class="card default">
+            <input value="6" type="radio" name="theme" class="absolute size-full base radio" />
+            6
+          </div>
+          <div class="card default mt-4">H-contrast</div>
+          <div class="mt-4" align="center">
+            <button id="reset">clear</button>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="card default">
+            <input value="7" type="radio" name="theme" class="absolute size-full base radio" />
+            7
+          </div>
+          <div class="card default">
+            <input value="8" type="radio" name="theme" class="absolute size-full base radio" />
+            8
+          </div>
+          <div class="card default">
+            <input value="9" type="radio" name="theme" class="absolute size-full base radio" />
+            9
+          </div>
+          <div class="card default mt-4">Grayscaled</div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="popup.js"></script>
+  <script src="scripts/popup.js"></script>
 </html>
