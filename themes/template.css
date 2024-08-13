@@ -11,7 +11,29 @@ html[theme="test"] {
   --ctbadgesuccess: #94ff90 !important;
   --ctbadgelight: #ffffff !important;
   --ctbadgeinfo: #79fbff !important;
+  /* code */
+  --ctlinedefault: #89ddff !important;
+  --ctidenifier: #a6a1a8 !important;
+  --ctkeyword: #8f7cda !important;
+  --ctoperator: #ffb730 !important;
+  --ctfunction: #82aaff !important;
+  --ctconstant: #f33675 !important;
+  --ctsupport: #f78054 !important;
+  --ctcomment: #cde9bb !important;
 }
+
+/* html[theme="lavender"] {
+  --ctbackground: #434343 !important;
+  --ctprimary: #3a3a3a !important;
+  --cttext: #d374ff !important;
+  --ctforeground: #ffffff !important;
+  --ctoutline: #4e4e4e !important;
+  --ctlink: #d374ff !important;
+  --ctbutton: #7e5a9b !important;
+  --ctbadgesuccess: #94ff90 !important;
+  --ctbadgelight: #ffffff !important;
+  --ctbadgeinfo: #79fbff !important;
+} */
 
 /* themes starts here */
 /* * html[theme]:not([theme=""]) */
@@ -159,4 +181,59 @@ html[theme]:not([theme=""]) .badge-light,
 html[theme]:not([theme=""]) .badge-light span {
   background: var(--ctbadgelight) !important;
   color: var(--ctbackground) !important;
+}
+
+/* ? courses */
+html[theme]:not([theme=""]) .card-footer {
+  background: var(--ctprimary) !important;
+  height: 50px;
+}
+
+html[theme]:not([theme=""]) .categoryname {
+  color: var(--ctforeground) !important;
+}
+
+/* ? footer */
+html[theme]:not([theme=""]) #page-footer {
+  background: var(--ctbackground) !important;
+  color: var(--ctforeground) !important;
+}
+
+/* ? exercise */
+html[theme]:not([theme=""]) table.quizreviewsummary td.cell {
+  background: var(--ctbackground) !important;
+  color: var(--ctforeground) !important;
+}
+html[theme]:not([theme=""]) table.quizreviewsummary th.cell {
+  background: var(--ctbackground) !important;
+  color: var(--cttext) !important;
+}
+
+html[theme]:not([theme=""]) .que .info {
+  background: var(--ctbackground) !important;
+  color: var(--cttext) !important;
+}
+
+/* line */
+html[theme]:not([theme=""]) .ace_line {
+  color: var(--ctoperator);
+}
+/* e.g. private, int */
+html[theme]:not([theme=""]) .ace_identifier {
+  color: var(--ctidenifier) !important;
+}
+html[theme]:not([theme=""]) .ace_support.ace_function {
+  color: var(--ctoperator) !important;
+}
+html[theme]:not([theme=""]) .ace_constant {
+  color: var(--ctconstant) !important;
+}
+html[theme]:not([theme=""]) .ace_comment {
+  color: var(--ctcomment) !important;
+}
+html[theme]:not([theme=""]) .ace_keyword {
+  color: var(--ctfunction) !important;
+}
+html[theme]:not([theme=""]) .ace_keyword.ace_operator {
+  color: var(--ctoperator) !important;
 }
