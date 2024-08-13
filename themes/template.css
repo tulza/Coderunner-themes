@@ -6,6 +6,11 @@ html[theme="test"] {
   --ctforeground: #ffffff !important;
   --ctoutline: #4e4e4e !important;
   --ctlink: #ffa841 !important;
+  --ctbutton: #ffa841 !important;
+  /* badges */
+  --ctbadgesuccess: #94ff90 !important;
+  --ctbadgelight: #ffffff !important;
+  --ctbadgeinfo: #79fbff !important;
 }
 
 /* themes starts here */
@@ -51,7 +56,9 @@ html[theme]:not([theme=""]) .dashboard-card {
 }
 
 /* ? main page */
-html[theme]:not([theme=""]) #page {
+html[theme]:not([theme=""]),
+html[theme]:not([theme=""]) #page,
+html[theme]:not([theme=""]) #page-wrapper {
   background: var(--ctprimary) !important;
 }
 
@@ -62,4 +69,94 @@ html[theme]:not([theme=""]) .main-inner {
 html[theme]:not([theme=""]) .list-group-item {
   background: var(--ctbackground) !important;
   border: 1px solid var(--ctoutline) !important;
+}
+
+/* ? buttons */
+html[theme]:not([theme=""]) .btn {
+  border: 1px solid var(--ctoutline) !important;
+  background: var(--ctbutton) !important;
+  color: var(--ctforeground) !important;
+}
+
+html[theme]:not([theme=""]) .btn span {
+  color: var(--ctforeground) !important;
+}
+
+/* ? header nav */
+html[theme]:not([theme=""]) .navbar {
+  background: var(--ctbackground) !important;
+}
+
+html[theme]:not([theme=""]) .navbar a,
+html[theme]:not([theme=""]) .navbar label {
+  color: var(--ctforeground) !important;
+}
+
+html[theme]:not([theme=""]) .navbar a:hover {
+  background-color: var(--ctbutton) !important;
+}
+
+/* ? dropdown */
+html[theme]:not([theme=""]) .dropdown-menu,
+html[theme]:not([theme=""]) .dropdown-item {
+  background: var(--ctbackground) !important;
+}
+
+/* ? course index */
+html[theme]:not([theme=""]) .courseindex-link {
+  color: var(--ctforeground) !important;
+}
+
+/* ? quiz menu */
+html[theme]:not([theme=""]) #region-main-box,
+html[theme]:not([theme=""]) #region-main {
+  background: var(--ctbackground) !important;
+  color: var(--ctforeground) !important;
+}
+
+html[theme]:not([theme=""]) .activity-header {
+  background: var(--ctprimary) !important;
+}
+
+html[theme]:not([theme=""]) .description,
+html[theme]:not([theme=""]) .course-description-item {
+  border-radius: 8px;
+  background: var(--ctprimary) !important;
+}
+
+html[theme]:not([theme=""]) nav,
+html[theme]:not([theme=""]) nav ul {
+  background: var(--ctprimary) !important;
+}
+
+html[theme]:not([theme=""]) .header {
+  color: var(--cttext) !important;
+}
+
+html[theme]:not([theme=""]) .cell {
+  color: var(--ctforeground) !important;
+}
+
+html[theme]:not([theme=""]) .breadcrumb {
+  background-color: var(--ctbackground) !important;
+  border-radius: 0;
+}
+
+/* ? badges */
+html[theme]:not([theme=""]) .alert-success,
+html[theme]:not([theme=""]) .alert-success span {
+  background: var(--ctbadgesuccess) !important;
+  color: var(--ctbackground) !important;
+}
+
+html[theme]:not([theme=""]) .alert-info,
+html[theme]:not([theme=""]) .alert-info span {
+  background: var(--ctbadgeinfo) !important;
+  color: var(--ctbackground) !important;
+}
+
+html[theme]:not([theme=""]) .badge-light,
+html[theme]:not([theme=""]) .badge-light span {
+  background: var(--ctbadgelight) !important;
+  color: var(--ctbackground) !important;
 }
