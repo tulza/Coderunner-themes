@@ -1,4 +1,5 @@
 @import url("tailwond.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -56,11 +57,29 @@ h1 {
 }
 
 input[type="radio"] {
+  cursor: pointer;
   opacity: 0;
 }
-input[type="radio"]:checked {
-  opacity: 1;
+
+input[type="radio"]:checked + div {
+  animation: mymove 1s;
+  background: #ffffc5;
+  box-shadow: 0px 0px 87.0912px #ff9a27, 0px 0px 49.7664px #ff9a27, 0px 0px 29.0304px #ff9a27, 0px 0px 14.5152px #ffffc5,
+    0px 0px 4.1472px #ffffc5, 0px 0px 2.0736px #ffffc5;
+  border-radius: 237.6px;
 }
+
+.radio-check-indicator {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+}
+
 .default {
   background: #232323;
   border: 2px solid #515151;
@@ -68,28 +87,18 @@ input[type="radio"]:checked {
   color: white;
 }
 
-.-mx-xs {
-  margin: 0 -2px;
-}
-
-.w-full {
-  width: 100%;
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .mt-4 {
   margin-top: 16px;
-}
-
-.size-full {
-  width: 100%;
-  height: 100%;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.base {
-  top: 0;
-  left: 0;
 }

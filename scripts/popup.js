@@ -28,7 +28,6 @@ const reset = () => {
 const setRadioCheck = (theme) => {
   for (let i = 0; i < radios.length; i++) {
     radios[i].addEventListener("click", () => setTheme(radios[i].value));
-    console.log(radios[i].value, currentTheme);
     if (radios[i].value === theme) {
       radios[i].checked = true;
       debugdisplay.innerHTML = radios[i].value;
@@ -42,7 +41,6 @@ let currentTheme = "";
 
 // ! get local storage here
 chromeStorage.get(["theme"], (result) => {
-  console.log(result);
   if (result.theme) {
     currentTheme = result.theme;
     setDisplay(result.theme);

@@ -1,0 +1,65 @@
+/* ? Themes */
+html[theme="test"] {
+  --ctbackground: #434343 !important;
+  --ctprimary: #3a3a3a !important;
+  --cttext: #ffa841 !important;
+  --ctforeground: #ffffff !important;
+  --ctoutline: #4e4e4e !important;
+  --ctlink: #ffa841 !important;
+}
+
+/* themes starts here */
+/* * html[theme]:not([theme=""]) */
+
+/* ? texts */
+html[theme]:not([theme=""]) h1,
+html[theme]:not([theme=""]) h2,
+html[theme]:not([theme=""]) h3,
+html[theme]:not([theme=""]) h4,
+html[theme]:not([theme=""]) h5,
+html[theme]:not([theme=""]) span {
+  color: var(--cttext);
+}
+html[theme]:not([theme=""]) a {
+  color: var(--ctlink);
+}
+
+html[theme]:not([theme=""]) small {
+  color: var(--ctforeground) !important;
+  text-decoration-color: var(--ctforeground) !important;
+}
+
+/* ? drawer content */
+html[theme]:not([theme=""]) .drawer,
+html[theme]:not([theme=""]) .draweheader,
+html[theme]:not([theme=""]) .drawercontent {
+  background: var(--ctbackground) !important;
+}
+
+html[theme]:not([theme=""]) .drawertoggle .fa-times::before {
+  color: var(--ctforeground);
+}
+
+/* ? cards */
+html[theme]:not([theme=""]) .card {
+  border: 1px solid var(--ctoutline) !important;
+  background: var(--ctprimary) !important;
+}
+
+html[theme]:not([theme=""]) .dashboard-card {
+  background: var(--ctbackground) !important;
+}
+
+/* ? main page */
+html[theme]:not([theme=""]) #page {
+  background: var(--ctprimary) !important;
+}
+
+html[theme]:not([theme=""]) .main-inner {
+  background: var(--ctbackground) !important;
+}
+
+html[theme]:not([theme=""]) .list-group-item {
+  background: var(--ctbackground) !important;
+  border: 1px solid var(--ctoutline) !important;
+}

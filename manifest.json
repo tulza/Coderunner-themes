@@ -4,7 +4,7 @@
   "description": "themes for coderunner!",
   "manifest_version": 3,
   "author": "Tulza",
-  "permissions": ["storage"],
+  "permissions": ["storage", "scripting", "activeTab"],
   "icons": {
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
@@ -12,10 +12,12 @@
   "content_scripts": [
     {
       "matches": ["https://coderunner.auckland.ac.nz/*"],
-      "js": ["scripts/background.js"],
+      "js": ["scripts/content.js"],
+      "css": ["themes/template.css"],
       "run_at": "document_start"
     }
   ],
+  "background": {},
   "action": {
     "default_title": "click me",
     "default_popup": "config.html"

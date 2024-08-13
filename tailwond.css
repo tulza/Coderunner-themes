@@ -13,3 +13,25 @@
 .mt-4 {
   margin-top: 16px;
 }
+
+.-mx-xs {
+  margin: 0 -2px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.base {
+  top: 0;
+  left: 0;
+}
