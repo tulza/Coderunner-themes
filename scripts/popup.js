@@ -49,4 +49,13 @@ chromeStorage.get(["theme"], (result) => {
   setRadioCheck(result.theme);
 });
 
+let page = "";
+const abathing = () => {
+  page = chrome.extension.getBackgroundPage();
+};
+
 resetButton.addEventListener("click", reset);
+resetButton.addEventListener("click", () => {
+  page = chrome.extension.getBackgroundPage();
+  console.log(page);
+});

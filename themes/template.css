@@ -1,12 +1,12 @@
 /* ? Themes */
 html[theme="test"] {
-  --ctbackground: #434343 !important;
-  --ctprimary: #3a3a3a !important;
-  --cttext: #ffa841 !important;
+  --ctbackground: #2b2b2b !important;
+  --ctprimary: #242424 !important;
+  --cttext: #4778ff !important;
   --ctforeground: #ffffff !important;
-  --ctoutline: #4e4e4e !important;
-  --ctlink: #ffa841 !important;
-  --ctbutton: #ffa841 !important;
+  --ctoutline: #424242 !important;
+  --ctlink: #4778ff !important;
+  --ctbutton: #4778ff !important;
   /* badges */
   --ctbadgesuccess: #94ff90 !important;
   --ctbadgelight: #ffffff !important;
@@ -212,6 +212,15 @@ html[theme]:not([theme=""]) table.quizreviewsummary th.cell {
 html[theme]:not([theme=""]) .que .info {
   background: var(--ctbackground) !important;
   color: var(--cttext) !important;
+}
+
+html[theme]:not([theme=""]) .formulation {
+  background: var(--ctprimary) !important;
+  color: var(--ctforeground) !important;
+}
+
+html[theme]:not([theme=""]) .formulation pre {
+  color: var(--ctfunction) !important;
 }
 
 /* line */
